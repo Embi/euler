@@ -66,3 +66,5 @@ the nature of the following problem: {readme}
 | [34](problems/problem_034) | `#FactorialSum` `#CuriousNumber`           | [5.899s](problems/problem_034/solution.py)(5.898s) | [0.075s](problems/problem_034/gpt_solution.py)(0.075s) |
 | [35](problems/problem_035) | `#CircularPrimes` `#PrimeNumbers`          | [0.233s](problems/problem_035/solution.py)(0.233s) | [4.424s](problems/problem_035/gpt_solution.py)(4.421s) |
 | [36](problems/problem_036) | `#PalindromicNumbers` `#BinaryConversion`  | [0.624s](problems/problem_036/solution.py)(0.624s) | [0.195s](problems/problem_036/gpt_solution.py)(0.194s) |
+| [37](problems/problem_037) | `#Truncatable` `#Primes`                   | [1.930s](problems/problem_037/solution.py)(1.929s) | [1.447s](problems/problem_037/gpt_solution.py)(1.446s) |
+| [38](problems/problem_038) | `#Pandigital` `#Concatenation`             | [0.008s](problems/problem_038/solution.py)(0.008s) | [0.005s](problems/problem_038/gpt_solution.py)(0.005s) |
