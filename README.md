@@ -71,3 +71,5 @@ the nature of the following problem: {readme}
 | [39](problems/problem_039) | `#Pythagorean` `#Perimeter`                | [0.071s](problems/problem_039/solution.py)(0.071s) | [13.062s](problems/problem_039/gpt_solution.py)(13.058s) |
 | [40](problems/problem_040) | `#irrationaldecimal` `#digitsequence`      | [0.022s](problems/problem_040/solution.py)(0.022s) | [0.099s](problems/problem_040/gpt_solution.py)(0.099s)   |
 | [41](problems/problem_041) | `#Pandigital` `#Prime`                     | [0.554s](problems/problem_041/solution.py)(0.552s) | [0.140s](problems/problem_041/gpt_solution.py)(0.139s)   |
+| [42](problems/problem_042) | `#sequence` `#triangle`                    | [0.001s](problems/problem_042/solution.py)(0.001s) | [0.001s](problems/problem_042/gpt_solution.py)(0.001s)   |
+| [43](problems/problem_043) | `#pandigital` `#sub-string-divisibility`   | [5.428s](problems/problem_043/solution.py)(5.427s) | [1.728s](problems/problem_043/gpt_solution.py)(1.727s)   |
