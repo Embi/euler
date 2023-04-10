@@ -80,3 +80,6 @@ the nature of the following problem: {readme}
 | [48](problems/problem_048) | `#exponential` `#digitcalculation`         | [0.005s](problems/problem_048/solution.py)(0.005s)   | [0.005s](problems/problem_048/gpt_solution.py)(0.005s)   |
 | [49](problems/problem_049) | `#PrimePermutation` `#ArithmeticSequence`  | [0.002s](problems/problem_049/solution.py)(0.002s)   | [Failed](problems/problem_049/gpt_solution.py)           |
 | [50](problems/problem_050) | `#consecutiveprimes` `#primenumbers`       | [0.068s](problems/problem_050/solution.py)(0.068s)   | [Failed](problems/problem_050/gpt_solution.py)           |
+| [51](problems/problem_051) | `#numbertheory` `#primefamily`             | [1.013s](problems/problem_051/solution.py)(1.012s)   | [Failed](problems/problem_051/gpt_solution.py)           |
+| [52](problems/problem_052) | `#digitpermutation` `#smallestinteger`     | [0.053s](problems/problem_052/solution.py)(0.053s)   | [0.081s](problems/problem_052/gpt_solution.py)(0.080s)   |
+| [53](problems/problem_053) | `#Combinatorics` `#BinomialCoefficient`    | [0.005s](problems/problem_053/solution.py)(0.005s)   | [0.005s](problems/problem_053/gpt_solution.py)(0.005s)   |
