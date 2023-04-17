@@ -128,3 +128,10 @@ Table explanation:
 | [51](problems/problem_051) | `#numbertheory` `#primefamily`             | [1.013s](problems/problem_051/solution.py)(1.012s)   | [Failed](problems/problem_051/gpt_solution.py)           |
 | [52](problems/problem_052) | `#digitpermutation` `#smallestinteger`     | [0.053s](problems/problem_052/solution.py)(0.053s)   | [0.081s](problems/problem_052/gpt_solution.py)(0.080s)   |
 | [53](problems/problem_053) | `#Combinatorics` `#BinomialCoefficient`    | [0.005s](problems/problem_053/solution.py)(0.005s)   | [0.005s](problems/problem_053/gpt_solution.py)(0.005s)   |
+| [54](problems/problem_054) | `#poker` `#cardgames`                      | [0.036s](problems/problem_054/solution.py)(0.036s)   | [Failed](problems/problem_054/gpt_solution.py)           |
+| [55](problems/problem_055) | `#Palindrome` `#Lychrel`                   | [0.105s](problems/problem_055/solution.py)(0.105s)   | [0.021s](problems/problem_055/gpt_solution.py)(0.021s)   |
+| [56](problems/problem_056) | `#massivenumber` `#digitalsum`             | [0.059s](problems/problem_056/solution.py)(0.059s)   | [0.062s](problems/problem_056/gpt_solution.py)(0.062s)   |
+| [57](problems/problem_057) | `#continuedfractions` `#digitcomparison`   | [0.002s](problems/problem_057/solution.py)(0.002s)   | [0.002s](problems/problem_057/gpt_solution.py)(0.002s)   |
+| [58](problems/problem_058) | `#Spiral` `#Primes`                        | [2.714s](problems/problem_058/solution.py)(2.713s)   | [4.355s](problems/problem_058/gpt_solution.py)(4.349s)   |
+| [59](problems/problem_059) | `#EncryptionMethod` `#XOR`                 | [0.382s](problems/problem_059/solution.py)(0.382s)   | [0.411s](problems/problem_059/gpt_solution.py)(0.406s)   |
+| [60](problems/problem_060) | `#primeconcatenation` `#optimization`      | [7.437s](problems/problem_060/solution.py)(7.431s)   | [Failed](problems/problem_060/gpt_solution.py)           |
