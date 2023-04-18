@@ -135,3 +135,7 @@ Table explanation:
 | [58](problems/problem_058) | `#Spiral` `#Primes`                        | [2.714s](problems/problem_058/solution.py)(2.713s)   | [4.355s](problems/problem_058/gpt_solution.py)(4.349s)   |
 | [59](problems/problem_059) | `#EncryptionMethod` `#XOR`                 | [0.382s](problems/problem_059/solution.py)(0.382s)   | [0.411s](problems/problem_059/gpt_solution.py)(0.406s)   |
 | [60](problems/problem_060) | `#primeconcatenation` `#optimization`      | [7.437s](problems/problem_060/solution.py)(7.431s)   | [Failed](problems/problem_060/gpt_solution.py)           |
+| [61](problems/problem_061) | `#figurate` `#cyclic`                      | [0.001s](problems/problem_061/solution.py)(0.001s)   | [Failed](problems/problem_061/gpt_solution.py)           |
+| [62](problems/problem_062) | `#Permutation` `#Cube`                     | [0.009s](problems/problem_062/solution.py)(0.009s)   | [0.008s](problems/problem_062/gpt_solution.py)(0.008s)   |
+| [63](problems/problem_063) | `#PowerfulNumbers` `#Exponentiation`       | [0.000s](problems/problem_063/solution.py)(0.000s)   | [0.000s](problems/problem_063/gpt_solution.py)(0.000s)   |
+| [64](problems/problem_064) | `#periodic` `#continuedfractions`          | [0.118s](problems/problem_064/solution.py)(0.118s)   | [Failed](problems/problem_064/gpt_solution.py)           |
