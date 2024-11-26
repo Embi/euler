@@ -1,1 +1,1 @@
-{"solution": 28684, "id": 61, "tags": "`#figurate` `#cyclic`", "py": {"cpu": 0.0007463370000000032, "wall": 0.0007457733154296875}, "gpt_py": "Failed"}
+{"solution": 28684, "id": 61, "tags": "`#figurate` `#cyclic`", "py": {"cpu": 0.0006930649999999997, "wall": 0.0006923675537109375}, "gpt3_py": "Failed", "gpt4_py": {"cpu": 0.010145424, "wall": 0.010160207748413086}}

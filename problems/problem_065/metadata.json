@@ -1,1 +1,1 @@
-{"solution": 272, "id": 65, "tags": "`#continuedfractions` `#numeratorsum`", "py": {"cpu": 2.9997000000000357e-05, "wall": 2.9325485229492188e-05}, "gpt_py": {"cpu": 2.116099999999871e-05, "wall": 2.0503997802734375e-05}}
+{"solution": 272, "id": 65, "tags": "`#continuedfractions` `#numeratorsum`", "py": {"cpu": 2.7329000000001283e-05, "wall": 2.6941299438476562e-05}, "gpt3_py": {"cpu": 2.116099999999871e-05, "wall": 2.0503997802734375e-05}, "gpt4_py": {"cpu": 3.0037999999999593e-05, "wall": 2.9325485229492188e-05}}

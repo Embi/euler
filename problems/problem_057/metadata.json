@@ -1,1 +1,1 @@
-{"solution": 153, "id": 57, "tags": "`#continuedfractions` `#digitcomparison`", "py": {"cpu": 0.0015033949999999994, "wall": 0.001505136489868164}, "gpt_py": {"cpu": 0.0015072269999999999, "wall": 0.0015103816986083984}}
+{"solution": 153, "id": 57, "tags": "`#continuedfractions` `#digitcomparison`", "py": {"cpu": 0.0013881910000000004, "wall": 0.0013952255249023438}, "gpt3_py": {"cpu": 0.0015072269999999999, "wall": 0.0015103816986083984}, "gpt4_py": {"cpu": 0.0013556790000000003, "wall": 0.0013580322265625}}

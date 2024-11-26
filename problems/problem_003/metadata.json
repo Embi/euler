@@ -1,1 +1,1 @@
-{"solution": 6857, "id": 3, "tags": "`#primefactors` `#largestprime`", "py": {"cpu": 0.031296374, "wall": 0.03131461143493652}, "gpt_py": {"cpu": 9.84509999999994e-05, "wall": 9.775161743164062e-05}}
+{"solution": 6857, "id": 3, "tags": "`#primefactors` `#largestprime`", "py": {"cpu": 0.025985175, "wall": 0.026032447814941406}, "gpt3_py": {"cpu": 9.84509999999994e-05, "wall": 9.775161743164062e-05}, "gpt4_py": {"cpu": 4.809799999999989e-05, "wall": 4.744529724121094e-05}}

@@ -1,1 +1,1 @@
-{"solution": 997651, "id": 50, "tags": "`#consecutiveprimes` `#primenumbers`", "py": {"cpu": 0.06786368299999998, "wall": 0.0678865909576416}, "gpt_py": "Failed"}
+{"solution": 997651, "id": 50, "tags": "`#consecutiveprimes` `#primenumbers`", "py": {"cpu": 0.056107515, "wall": 0.05614662170410156}, "gpt3_py": "Failed", "gpt4_py": {"cpu": 1.256808306, "wall": 1.257340431213379}}

@@ -1,1 +1,1 @@
-{"solution": -59231, "id": 27, "tags": "`#quadraticprimes` `#coefficientsproduct`", "py": {"cpu": 0.08769821199999994, "wall": 0.08771848678588867}, "gpt_py": {"cpu": 1.770852571, "wall": 1.7722907066345215}}
+{"solution": -59231, "id": 27, "tags": "`#quadraticprimes` `#coefficientsproduct`", "py": {"cpu": 0.07492695000000005, "wall": 0.07495403289794922}, "gpt3_py": {"cpu": 1.770852571, "wall": 1.7722907066345215}, "gpt4_py": {"cpu": 0.526690329, "wall": 0.5270469188690186}}

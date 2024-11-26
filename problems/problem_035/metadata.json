@@ -1,1 +1,1 @@
-{"solution": 55, "id": 35, "tags": "`#CircularPrimes` `#PrimeNumbers`", "py": {"cpu": 0.23275218599999997, "wall": 0.23287391662597656}, "gpt_py": {"cpu": 4.4214988260000005, "wall": 4.4243323802948}}
+{"solution": 55, "id": 35, "tags": "`#CircularPrimes` `#PrimeNumbers`", "py": {"cpu": 0.22853582, "wall": 0.22870540618896484}, "gpt3_py": {"cpu": 4.4214988260000005, "wall": 4.4243323802948}, "gpt4_py": {"cpu": 2.342067165, "wall": 2.3429672718048096}}

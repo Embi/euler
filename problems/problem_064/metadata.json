@@ -1,1 +1,1 @@
-{"solution": 1322, "id": 64, "tags": "`#periodic` `#continuedfractions`", "py": {"cpu": 0.11835532200000001, "wall": 0.11841011047363281}, "gpt_py": "Failed"}
+{"solution": 1322, "id": 64, "tags": "`#periodic` `#continuedfractions`", "py": {"cpu": 0.084700793, "wall": 0.08474874496459961}, "gpt3_py": "Failed", "gpt4_py": {"cpu": 0.022764027000000003, "wall": 0.022800207138061523}}

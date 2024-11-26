@@ -1,1 +1,1 @@
-{"solution": 26033, "id": 60, "tags": "`#primeconcatenation` `#optimization`", "py": {"cpu": 7.430842195, "wall": 7.437136888504028}, "gpt_py": "Failed"}
+{"solution": 26033, "id": 60, "tags": "`#primeconcatenation` `#optimization`", "py": {"cpu": 7.227264628, "wall": 7.231515169143677}, "gpt3_py": "Failed", "gpt4_py": {"cpu": 56.450131464, "wall": 56.47211289405823}}

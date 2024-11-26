@@ -1,1 +1,1 @@
-{"solution": 142857, "id": 52, "tags": "`#digitpermutation` `#smallestinteger`", "py": {"cpu": 0.052916334, "wall": 0.052967071533203125}, "gpt_py": {"cpu": 0.080463438, "wall": 0.08053159713745117}}
+{"solution": 142857, "id": 52, "tags": "`#digitpermutation` `#smallestinteger`", "py": {"cpu": 0.054288630000000004, "wall": 0.05442070960998535}, "gpt3_py": {"cpu": 0.080463438, "wall": 0.08053159713745117}, "gpt4_py": {"cpu": 0.14755150700000003, "wall": 0.14762139320373535}}

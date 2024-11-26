@@ -1,1 +1,1 @@
-{"solution": 872187, "id": 36, "tags": "`#PalindromicNumbers` `#BinaryConversion`", "py": {"cpu": 0.623761014, "wall": 0.6239275932312012}, "gpt_py": {"cpu": 0.19366852, "wall": 0.19510722160339355}}
+{"solution": 872187, "id": 36, "tags": "`#PalindromicNumbers` `#BinaryConversion`", "py": {"cpu": 0.59292882, "wall": 0.5931515693664551}, "gpt3_py": {"cpu": 0.19366852, "wall": 0.19510722160339355}, "gpt4_py": {"cpu": 0.223584344, "wall": 0.22383499145507812}}

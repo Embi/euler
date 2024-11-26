@@ -1,1 +1,1 @@
-{"solution": 510510, "id": 69, "tags": "`#EulerTotient` `#Optimization`", "py": {"cpu": 4.595999999912337e-06, "wall": 2.384185791015625e-06}, "gpt_py": {"cpu": 8.083337529, "wall": 8.086353302001953}}
+{"solution": 510510, "id": 69, "tags": "`#EulerTotient` `#Optimization`", "py": {"cpu": 4.34199999999052e-06, "wall": 2.86102294921875e-06}, "gpt3_py": {"cpu": 8.083337529, "wall": 8.086353302001953}, "gpt4_py": {"cpu": 8.043542235, "wall": 8.046235084533691}}
