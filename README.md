@@ -139,3 +139,8 @@ Table explanation:
 | [62](problems/problem_062) | `#Permutation` `#Cube`                     | [0.009s](problems/problem_062/solution.py)(0.009s)   | [0.008s](problems/problem_062/gpt_solution.py)(0.008s)   |
 | [63](problems/problem_063) | `#PowerfulNumbers` `#Exponentiation`       | [0.000s](problems/problem_063/solution.py)(0.000s)   | [0.000s](problems/problem_063/gpt_solution.py)(0.000s)   |
 | [64](problems/problem_064) | `#periodic` `#continuedfractions`          | [0.118s](problems/problem_064/solution.py)(0.118s)   | [Failed](problems/problem_064/gpt_solution.py)           |
+| [65](problems/problem_065) | `#continuedfractions` `#numeratorsum`      | [0.000s](problems/problem_065/solution.py)(0.000s)   | [0.000s](problems/problem_065/gpt_solution.py)(0.000s)   |
+| [66](problems/problem_066) | `#Diophantine` `#Equations`                | [0.017s](problems/problem_066/solution.py)(0.017s)   |                                                          |
+| [67](problems/problem_067) | `#dynamicprogramming` `#maximumpathsum`    | [0.001s](problems/problem_067/solution.py)(0.001s)   | [0.005s](problems/problem_067/gpt_solution.py)(0.001s)   |
+| [68](problems/problem_068) | `#MagicRing` `#Max16DigitString`           | [3.399s](problems/problem_068/solution.py)(3.399s)   | [Failed](problems/problem_068/gpt_solution.py)           |
+| [69](problems/problem_069) | `#Euler` `#Totient`                        |                                                      | [6.753s](problems/problem_069/gpt_solution.py)(6.697s)   |
