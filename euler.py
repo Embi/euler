@@ -49,6 +49,10 @@ class Problem():
         self.__init_problem()
 
     def solve(self, language: str = 'py'):
+        """Start solving problem in a particular language. This method opens
+        boilerplate solution file in Vim with problem description in Vim
+        split screen.
+        """
         assert language in LANGUAGES
         solution_file_name = f'solution.{language}'
         if solution_file_name not in self.solution_files():
@@ -58,7 +62,7 @@ class Problem():
         self.run()
 
     def generate(self, model: str):
-        """Prompt ChatGPT to generate solution to the problem in python.
+        """Prompt given LLM model to generate solution to the problem in python.
         """
         with self.readme_file.open() as f:
             readme = f.read()
@@ -130,6 +134,9 @@ class Problem():
         self.update_metadata(update)
 
     def check_result(self, result: dict) -> bool:
+        """After solution execution require human input that confirms
+        the result is correct.
+        """
         with self.metadata_file.open() as s:
             metadata = json.load(s)
         if metadata['solution'] == None:
@@ -143,11 +150,13 @@ class Problem():
         return result['right']
 
     def update_metadata(self, update: dict):
+        """Update problems metadata file"""
         metadata = self.get_metadata()
         metadata.update(update)
         _dump_json(metadata, self.metadata_file)
 
     def get_metadata(self) -> dict:
+        """Load problems metadata file"""
         return _load_json(self.metadata_file)
 
     def solution_files(self):
@@ -159,6 +168,7 @@ class Problem():
             lambda x: x.name, self.problem_dir.glob('readme*')))
 
     def __init_problem(self):
+        """Initialize problems directory."""
         try:
             self.problem_dir.mkdir()
         except FileExistsError:
@@ -175,6 +185,9 @@ class Problem():
         self.generate_tags()
 
     def __create_readme(self):
+        """Use wget and pandoc to fetch problems description. Also fetch all
+        given problem input files.
+        """
         readme_files = self.readme_files()
         if 'readme.md' in readme_files and 'readme.html' in readme_files:
             return
