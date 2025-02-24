@@ -28,43 +28,46 @@ one space and never use a newline. These tags should describe
 the nature of the following problem: {readme}
 ```
 
-| id                         | tags                                       | py                                                 | gpt_py                                                 |
-|:---------------------------|:-------------------------------------------|:---------------------------------------------------|:-------------------------------------------------------|
-| [1](problems/problem_001)  | `#Multiples` `#Summation`                  | [0.000s](problems/problem_001/solution.py)(0.000s) | [0.000s](problems/problem_001/gpt_solution.py)(0.000s) |
-| [2](problems/problem_002)  | `#Fibonacci` `#Summation`                  | [0.000s](problems/problem_002/solution.py)(0.000s) | [0.000s](problems/problem_002/gpt_solution.py)(0.000s) |
-| [3](problems/problem_003)  | `#primefactors` `#largestprime`            | [0.031s](problems/problem_003/solution.py)(0.031s) | [0.000s](problems/problem_003/gpt_solution.py)(0.000s) |
-| [4](problems/problem_004)  | `#Palindrome` `#Multiplication`            | [0.000s](problems/problem_004/solution.py)(0.000s) | [0.163s](problems/problem_004/gpt_solution.py)(0.163s) |
-| [5](problems/problem_005)  | `#smallestnumber` `#divisibility`          | [0.000s](problems/problem_005/solution.py)(0.000s) | [0.012s](problems/problem_005/gpt_solution.py)(0.012s) |
-| [6](problems/problem_006)  | `#Arithmetic` `#Algebra`                   | [0.000s](problems/problem_006/solution.py)(0.000s) | [0.000s](problems/problem_006/gpt_solution.py)(0.000s) |
-| [7](problems/problem_007)  | `#prime` `#number`                         | [0.046s](problems/problem_007/solution.py)(0.046s) | [1.278s](problems/problem_007/gpt_solution.py)(1.277s) |
-| [8](problems/problem_008)  | `#digitproduct` `#adjacentdigits`          | [0.002s](problems/problem_008/solution.py)(0.002s) | [0.001s](problems/problem_008/gpt_solution.py)(0.001s) |
-| [9](problems/problem_009)  | `#Pythagorean` `#Triplet`                  | [0.005s](problems/problem_009/solution.py)(0.005s) | [0.085s](problems/problem_009/gpt_solution.py)(0.085s) |
-| [10](problems/problem_010) | `#PrimeNumbers` `#Summation`               | [1.599s](problems/problem_010/solution.py)(1.599s) | [0.148s](problems/problem_010/gpt_solution.py)(0.148s) |
-| [11](problems/problem_011) | `#grid` `#product`                         | [0.002s](problems/problem_011/solution.py)(0.029s) | [0.000s](problems/problem_011/gpt_solution.py)(0.000s) |
-| [12](problems/problem_012) | `#TriangleNumbers` `#Divisors`             | [0.738s](problems/problem_012/solution.py)(1.326s) | [1.720s](problems/problem_012/gpt_solution.py)(1.720s) |
-| [13](problems/problem_013) | `#sum` `#largeNumbers`                     | [0.000s](problems/problem_013/solution.py)(0.000s) | [0.000s](problems/problem_013/gpt_solution.py)(0.000s) |
-| [14](problems/problem_014) | `#Collatz` `#LongestChain`                 | [5.758s](problems/problem_014/solution.py)(5.753s) | [7.577s](problems/problem_014/gpt_solution.py)(7.575s) |
-| [15](problems/problem_015) | `#Combinatorics` `#GridPaths`              | [0.001s](problems/problem_015/solution.py)(0.006s) | [0.000s](problems/problem_015/gpt_solution.py)(0.000s) |
-| [16](problems/problem_016) | `#exponential` `#digitalsum`               | [0.000s](problems/problem_016/solution.py)(0.000s) | [0.000s](problems/problem_016/gpt_solution.py)(0.000s) |
-| [17](problems/problem_017) | `#WordCount` `#NumberWords`                | [0.000s](problems/problem_017/solution.py)(0.000s) | [0.000s](problems/problem_017/gpt_solution.py)(0.000s) |
-| [18](problems/problem_018) | `#maximum` `#triangle`                     | [0.001s](problems/problem_018/solution.py)(0.009s) | [0.000s](problems/problem_018/gpt_solution.py)(0.000s) |
-| [19](problems/problem_019) | `#date` `#counting`                        | [0.001s](problems/problem_019/solution.py)(0.001s) | [0.000s](problems/problem_019/gpt_solution.py)(0.000s) |
-| [20](problems/problem_020) | `#Factorial` `#DigitSum`                   | [0.000s](problems/problem_020/solution.py)(0.000s) | [0.000s](problems/problem_020/gpt_solution.py)(0.000s) |
-| [21](problems/problem_021) | `#AmicableNumbers` `#Divisors`             | [0.624s](problems/problem_021/solution.py)(0.624s) | [2.414s](problems/problem_021/gpt_solution.py)(2.412s) |
-| [22](problems/problem_022) | `#Sorting` `#AlphabeticalValue`            | [0.003s](problems/problem_022/solution.py)(0.003s) | [0.004s](problems/problem_022/gpt_solution.py)(0.004s) |
-| [23](problems/problem_023) | `#numbertheory` `#sumofdivisors`           | [3.765s](problems/problem_023/solution.py)(3.764s) | [1.383s](problems/problem_023/gpt_solution.py)(1.381s) |
-| [24](problems/problem_024) | `#Permutations` `#LexicographicOrder`      | [0.000s](problems/problem_024/solution.py)(0.000s) | [Failed](problems/problem_024/gpt_solution.py)         |
-| [25](problems/problem_025) | `#Fibonacci` `#Digits`                     | [0.019s](problems/problem_025/solution.py)(0.019s) | [0.019s](problems/problem_025/gpt_solution.py)(0.019s) |
-| [26](problems/problem_026) | `#recurring` `#fractions`                  | [0.015s](problems/problem_026/solution.py)(0.014s) | [0.009s](problems/problem_026/gpt_solution.py)(0.009s) |
-| [27](problems/problem_027) | `#quadraticprimes` `#coefficientsproduct`  | [0.088s](problems/problem_027/solution.py)(0.088s) | [1.772s](problems/problem_027/gpt_solution.py)(1.771s) |
-| [28](problems/problem_028) | `#spiral` `#diagonals`                     | [0.000s](problems/problem_028/solution.py)(0.000s) | [0.000s](problems/problem_028/gpt_solution.py)(0.000s) |
-| [29](problems/problem_029) | `#integercombinations` `#distinctterms`    | [0.580s](problems/problem_029/solution.py)(0.580s) | [0.004s](problems/problem_029/gpt_solution.py)(0.004s) |
-| [30](problems/problem_030) | `#digitpowers` `#sum`                      | [0.543s](problems/problem_030/solution.py)(0.542s) | [1.508s](problems/problem_030/gpt_solution.py)(1.507s) |
-| [31](problems/problem_031) | `#UKCurrency` `#CoinCombinations`          | [2.721s](problems/problem_031/solution.py)(3.317s) | [0.000s](problems/problem_031/gpt_solution.py)(0.000s) |
-| [32](problems/problem_032) | `#pandigital` `#multiplication`            | [0.056s](problems/problem_032/solution.py)(0.644s) | [0.282s](problems/problem_032/gpt_solution.py)(0.282s) |
-| [33](problems/problem_033) | `#CuriousFractions` `#SimplificationError` | [0.001s](problems/problem_033/solution.py)(0.001s) | [Failed](problems/problem_033/gpt_solution.py)         |
-| [34](problems/problem_034) | `#FactorialSum` `#CuriousNumber`           | [5.899s](problems/problem_034/solution.py)(5.898s) | [0.075s](problems/problem_034/gpt_solution.py)(0.075s) |
-| [35](problems/problem_035) | `#CircularPrimes` `#PrimeNumbers`          | [0.233s](problems/problem_035/solution.py)(0.233s) | [4.424s](problems/problem_035/gpt_solution.py)(4.421s) |
-| [36](problems/problem_036) | `#PalindromicNumbers` `#BinaryConversion`  | [0.624s](problems/problem_036/solution.py)(0.624s) | [0.195s](problems/problem_036/gpt_solution.py)(0.194s) |
-| [37](problems/problem_037) | `#Truncatable` `#Primes`                   | [1.930s](problems/problem_037/solution.py)(1.929s) | [1.447s](problems/problem_037/gpt_solution.py)(1.446s) |
-| [38](problems/problem_038) | `#Pandigital` `#Concatenation`             | [0.008s](problems/problem_038/solution.py)(0.008s) | [0.005s](problems/problem_038/gpt_solution.py)(0.005s) |
+| id                         | tags                                       | py                                                 | gpt_py                                                   |
+|:---------------------------|:-------------------------------------------|:---------------------------------------------------|:---------------------------------------------------------|
+| [1](problems/problem_001)  | `#Multiples` `#Summation`                  | [0.000s](problems/problem_001/solution.py)(0.000s) | [0.000s](problems/problem_001/gpt_solution.py)(0.000s)   |
+| [2](problems/problem_002)  | `#Fibonacci` `#Summation`                  | [0.000s](problems/problem_002/solution.py)(0.000s) | [0.000s](problems/problem_002/gpt_solution.py)(0.000s)   |
+| [3](problems/problem_003)  | `#primefactors` `#largestprime`            | [0.031s](problems/problem_003/solution.py)(0.031s) | [0.000s](problems/problem_003/gpt_solution.py)(0.000s)   |
+| [4](problems/problem_004)  | `#Palindrome` `#Multiplication`            | [0.000s](problems/problem_004/solution.py)(0.000s) | [0.163s](problems/problem_004/gpt_solution.py)(0.163s)   |
+| [5](problems/problem_005)  | `#smallestnumber` `#divisibility`          | [0.000s](problems/problem_005/solution.py)(0.000s) | [0.012s](problems/problem_005/gpt_solution.py)(0.012s)   |
+| [6](problems/problem_006)  | `#Arithmetic` `#Algebra`                   | [0.000s](problems/problem_006/solution.py)(0.000s) | [0.000s](problems/problem_006/gpt_solution.py)(0.000s)   |
+| [7](problems/problem_007)  | `#prime` `#number`                         | [0.046s](problems/problem_007/solution.py)(0.046s) | [1.278s](problems/problem_007/gpt_solution.py)(1.277s)   |
+| [8](problems/problem_008)  | `#digitproduct` `#adjacentdigits`          | [0.002s](problems/problem_008/solution.py)(0.002s) | [0.001s](problems/problem_008/gpt_solution.py)(0.001s)   |
+| [9](problems/problem_009)  | `#Pythagorean` `#Triplet`                  | [0.005s](problems/problem_009/solution.py)(0.005s) | [0.085s](problems/problem_009/gpt_solution.py)(0.085s)   |
+| [10](problems/problem_010) | `#PrimeNumbers` `#Summation`               | [1.599s](problems/problem_010/solution.py)(1.599s) | [0.148s](problems/problem_010/gpt_solution.py)(0.148s)   |
+| [11](problems/problem_011) | `#grid` `#product`                         | [0.002s](problems/problem_011/solution.py)(0.029s) | [0.000s](problems/problem_011/gpt_solution.py)(0.000s)   |
+| [12](problems/problem_012) | `#TriangleNumbers` `#Divisors`             | [0.738s](problems/problem_012/solution.py)(1.326s) | [1.720s](problems/problem_012/gpt_solution.py)(1.720s)   |
+| [13](problems/problem_013) | `#sum` `#largeNumbers`                     | [0.000s](problems/problem_013/solution.py)(0.000s) | [0.000s](problems/problem_013/gpt_solution.py)(0.000s)   |
+| [14](problems/problem_014) | `#Collatz` `#LongestChain`                 | [5.758s](problems/problem_014/solution.py)(5.753s) | [7.577s](problems/problem_014/gpt_solution.py)(7.575s)   |
+| [15](problems/problem_015) | `#Combinatorics` `#GridPaths`              | [0.001s](problems/problem_015/solution.py)(0.006s) | [0.000s](problems/problem_015/gpt_solution.py)(0.000s)   |
+| [16](problems/problem_016) | `#exponential` `#digitalsum`               | [0.000s](problems/problem_016/solution.py)(0.000s) | [0.000s](problems/problem_016/gpt_solution.py)(0.000s)   |
+| [17](problems/problem_017) | `#WordCount` `#NumberWords`                | [0.000s](problems/problem_017/solution.py)(0.000s) | [0.000s](problems/problem_017/gpt_solution.py)(0.000s)   |
+| [18](problems/problem_018) | `#maximum` `#triangle`                     | [0.001s](problems/problem_018/solution.py)(0.009s) | [0.000s](problems/problem_018/gpt_solution.py)(0.000s)   |
+| [19](problems/problem_019) | `#date` `#counting`                        | [0.001s](problems/problem_019/solution.py)(0.001s) | [0.000s](problems/problem_019/gpt_solution.py)(0.000s)   |
+| [20](problems/problem_020) | `#Factorial` `#DigitSum`                   | [0.000s](problems/problem_020/solution.py)(0.000s) | [0.000s](problems/problem_020/gpt_solution.py)(0.000s)   |
+| [21](problems/problem_021) | `#AmicableNumbers` `#Divisors`             | [0.624s](problems/problem_021/solution.py)(0.624s) | [2.414s](problems/problem_021/gpt_solution.py)(2.412s)   |
+| [22](problems/problem_022) | `#Sorting` `#AlphabeticalValue`            | [0.003s](problems/problem_022/solution.py)(0.003s) | [0.004s](problems/problem_022/gpt_solution.py)(0.004s)   |
+| [23](problems/problem_023) | `#numbertheory` `#sumofdivisors`           | [3.765s](problems/problem_023/solution.py)(3.764s) | [1.383s](problems/problem_023/gpt_solution.py)(1.381s)   |
+| [24](problems/problem_024) | `#Permutations` `#LexicographicOrder`      | [0.000s](problems/problem_024/solution.py)(0.000s) | [Failed](problems/problem_024/gpt_solution.py)           |
+| [25](problems/problem_025) | `#Fibonacci` `#Digits`                     | [0.019s](problems/problem_025/solution.py)(0.019s) | [0.019s](problems/problem_025/gpt_solution.py)(0.019s)   |
+| [26](problems/problem_026) | `#recurring` `#fractions`                  | [0.015s](problems/problem_026/solution.py)(0.014s) | [0.009s](problems/problem_026/gpt_solution.py)(0.009s)   |
+| [27](problems/problem_027) | `#quadraticprimes` `#coefficientsproduct`  | [0.088s](problems/problem_027/solution.py)(0.088s) | [1.772s](problems/problem_027/gpt_solution.py)(1.771s)   |
+| [28](problems/problem_028) | `#spiral` `#diagonals`                     | [0.000s](problems/problem_028/solution.py)(0.000s) | [0.000s](problems/problem_028/gpt_solution.py)(0.000s)   |
+| [29](problems/problem_029) | `#integercombinations` `#distinctterms`    | [0.580s](problems/problem_029/solution.py)(0.580s) | [0.004s](problems/problem_029/gpt_solution.py)(0.004s)   |
+| [30](problems/problem_030) | `#digitpowers` `#sum`                      | [0.543s](problems/problem_030/solution.py)(0.542s) | [1.508s](problems/problem_030/gpt_solution.py)(1.507s)   |
+| [31](problems/problem_031) | `#UKCurrency` `#CoinCombinations`          | [2.721s](problems/problem_031/solution.py)(3.317s) | [0.000s](problems/problem_031/gpt_solution.py)(0.000s)   |
+| [32](problems/problem_032) | `#pandigital` `#multiplication`            | [0.056s](problems/problem_032/solution.py)(0.644s) | [0.282s](problems/problem_032/gpt_solution.py)(0.282s)   |
+| [33](problems/problem_033) | `#CuriousFractions` `#SimplificationError` | [0.001s](problems/problem_033/solution.py)(0.001s) | [Failed](problems/problem_033/gpt_solution.py)           |
+| [34](problems/problem_034) | `#FactorialSum` `#CuriousNumber`           | [5.899s](problems/problem_034/solution.py)(5.898s) | [0.075s](problems/problem_034/gpt_solution.py)(0.075s)   |
+| [35](problems/problem_035) | `#CircularPrimes` `#PrimeNumbers`          | [0.233s](problems/problem_035/solution.py)(0.233s) | [4.424s](problems/problem_035/gpt_solution.py)(4.421s)   |
+| [36](problems/problem_036) | `#PalindromicNumbers` `#BinaryConversion`  | [0.624s](problems/problem_036/solution.py)(0.624s) | [0.195s](problems/problem_036/gpt_solution.py)(0.194s)   |
+| [37](problems/problem_037) | `#Truncatable` `#Primes`                   | [1.930s](problems/problem_037/solution.py)(1.929s) | [1.447s](problems/problem_037/gpt_solution.py)(1.446s)   |
+| [38](problems/problem_038) | `#Pandigital` `#Concatenation`             | [0.008s](problems/problem_038/solution.py)(0.008s) | [0.005s](problems/problem_038/gpt_solution.py)(0.005s)   |
+| [39](problems/problem_039) | `#Pythagorean` `#Perimeter`                | [0.071s](problems/problem_039/solution.py)(0.071s) | [13.062s](problems/problem_039/gpt_solution.py)(13.058s) |
+| [40](problems/problem_040) | `#irrationaldecimal` `#digitsequence`      | [0.022s](problems/problem_040/solution.py)(0.022s) | [0.099s](problems/problem_040/gpt_solution.py)(0.099s)   |
+| [41](problems/problem_041) | `#Pandigital` `#Prime`                     | [0.554s](problems/problem_041/solution.py)(0.552s) | [0.140s](problems/problem_041/gpt_solution.py)(0.139s)   |
