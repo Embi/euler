@@ -74,3 +74,9 @@ the nature of the following problem: {readme}
 | [42](problems/problem_042) | `#sequence` `#triangle`                    | [0.001s](problems/problem_042/solution.py)(0.001s)   | [0.001s](problems/problem_042/gpt_solution.py)(0.001s)   |
 | [43](problems/problem_043) | `#pandigital` `#sub-string-divisibility`   | [5.428s](problems/problem_043/solution.py)(5.427s)   | [1.728s](problems/problem_043/gpt_solution.py)(1.727s)   |
 | [44](problems/problem_044) | `#Pentagonal` `#Mathematics`               | [55.057s](problems/problem_044/solution.py)(54.964s) | [4.132s](problems/problem_044/gpt_solution.py)(4.130s)   |
+| [45](problems/problem_045) | `#NumberSequence`                          | [0.540s](problems/problem_045/solution.py)(0.539s)   | [0.010s](problems/problem_045/gpt_solution.py)(0.010s)   |
+| [46](problems/problem_046) | `#GoldbachConjecture` `#NumberTheory`      | [0.007s](problems/problem_046/solution.py)(0.007s)   | [0.004s](problems/problem_046/gpt_solution.py)(0.004s)   |
+| [47](problems/problem_047) | `#PrimeFactors` `#ConsecutiveIntegers`     | [0.223s](problems/problem_047/solution.py)(0.223s)   | [0.366s](problems/problem_047/gpt_solution.py)(0.366s)   |
+| [48](problems/problem_048) | `#exponential` `#digitcalculation`         | [0.005s](problems/problem_048/solution.py)(0.005s)   | [0.005s](problems/problem_048/gpt_solution.py)(0.005s)   |
+| [49](problems/problem_049) | `#PrimePermutation` `#ArithmeticSequence`  | [0.002s](problems/problem_049/solution.py)(0.002s)   | [Failed](problems/problem_049/gpt_solution.py)           |
+| [50](problems/problem_050) | `#consecutiveprimes` `#primenumbers`       | [0.068s](problems/problem_050/solution.py)(0.068s)   | [Failed](problems/problem_050/gpt_solution.py)           |
