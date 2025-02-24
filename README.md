@@ -100,3 +100,4 @@ the nature of the following problem: {readme}
 | [68](problems/problem_068) | `#MagicRing` `#Max16DigitString`           | [3.399s](problems/problem_068/solution.py)(3.399s)     | [Failed](problems/problem_068/gpt_solution.py)             |
 | [69](problems/problem_069) | `#EulerTotient` `#Optimization`            | [0.000s](problems/problem_069/solution.py)(0.000s)     | [8.086s](problems/problem_069/gpt_solution.py)(8.083s)     |
 | [70](problems/problem_070) | `#Euler` `#Permutation`                    | [124.786s](problems/problem_070/solution.py)(124.751s) | [243.387s](problems/problem_070/gpt_solution.py)(243.123s) |
+| [71](problems/problem_071) | `#Fraction` `#Reduced`                     | [0.051s](problems/problem_071/solution.py)(0.051s)     | [0.086s](problems/problem_071/gpt_solution.py)(0.086s)     |
