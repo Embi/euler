@@ -52,4 +52,5 @@ Table explanation:
  [33](problems/problem_033)| `#CuriousFractions` `#SimplificationError` |[0.001s](problems/problem_033/solution.py)(0.001s)
  [34](problems/problem_034)| `#FactorialSum` `#CuriousNumber` |[5.899s](problems/problem_034/solution.py)(5.898s)
  [35](problems/problem_035)| `#CircularPrimes` `#PrimeNumbers` |[0.233s](problems/problem_035/solution.py)(0.233s)
+ [36](problems/problem_036)| `#PalindromicNumbers` `#BinaryConversion` |[0.624s](problems/problem_036/solution.py)(0.624s)
  
