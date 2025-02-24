@@ -9,6 +9,8 @@ Script for managing all life-cycle around project euler problems:
 Usage:
   euler solve <problem_id> [<language>]
   euler gpt <problem_id>
+  euler run <problem_id>
+  euler run-gpt <problem_id>
   euler stats
 """
 
@@ -187,7 +189,7 @@ class Problem():
         self.__execute([
             'wget', '-q', '--force-html', '-p', '-nd',
             '--base', 'https://projecteuler.net/', '-i',  'readme.html'
-        ])
+        ], False)
         self.__execute([
             'pandoc', '-f', 'html+tex_math_dollars',
             '--extract-media=assets', '-t', 'gfm',
@@ -305,3 +307,7 @@ if __name__ == '__main__':
         problem.solve(language)
     if arguments['gpt']:
         problem.solve_gpt()
+    if arguments['run']:
+        problem.run()
+    if arguments['run-gpt']:
+        problem.run(gpt_generated=True)
