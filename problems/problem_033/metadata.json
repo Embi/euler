@@ -1,1 +1,1 @@
-{"solution": 100, "id": 33, "tags": "`#CuriousFractions` `#SimplificationError`", "py": {"cpu": 0.0007810189999999991, "wall": 0.0007834434509277344}, "gpt_py": "Failed"}
+{"solution": 100, "id": 33, "tags": "`#CuriousFractions` `#SimplificationError`", "py": {"cpu": 0.0007186610000000006, "wall": 0.0007214546203613281}, "gpt3_py": "Failed", "gpt4_py": {"cpu": 0.002183074, "wall": 0.0021827220916748047}}

@@ -1,1 +1,1 @@
-{"solution": 4179871, "id": 23, "tags": "`#numbertheory` `#sumofdivisors`", "py": {"cpu": 3.763588785, "wall": 3.7645606994628906}, "gpt_py": {"cpu": 1.381364657, "wall": 1.382535696029663}}
+{"solution": 4179871, "id": 23, "tags": "`#numbertheory` `#sumofdivisors`", "py": {"cpu": 3.37560287, "wall": 3.3767173290252686}, "gpt3_py": {"cpu": 1.381364657, "wall": 1.382535696029663}, "gpt4_py": {"cpu": 0.6369157120000001, "wall": 0.637183666229248}}

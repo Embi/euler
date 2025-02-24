@@ -1,1 +1,1 @@
-{"solution": 49, "id": 63, "tags": "`#PowerfulNumbers` `#Exponentiation`", "py": {"cpu": 2.2522999999999987e-05, "wall": 2.1696090698242188e-05}, "gpt_py": {"cpu": 5.8759999999999715e-05, "wall": 5.817413330078125e-05}}
+{"solution": 49, "id": 63, "tags": "`#PowerfulNumbers` `#Exponentiation`", "py": {"cpu": 2.670699999999908e-05, "wall": 2.5510787963867188e-05}, "gpt3_py": {"cpu": 5.8759999999999715e-05, "wall": 5.817413330078125e-05}, "gpt4_py": {"cpu": 4.03599999999997e-05, "wall": 3.9577484130859375e-05}}

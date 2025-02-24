@@ -1,1 +1,1 @@
-{"solution": 210, "id": 40, "tags": "`#irrationaldecimal` `#digitsequence`", "py": {"cpu": 0.021504191000000002, "wall": 0.02151632308959961}, "gpt_py": {"cpu": 0.09925918, "wall": 0.09943056106567383}}
+{"solution": 210, "id": 40, "tags": "`#irrationaldecimal` `#digitsequence`", "py": {"cpu": 0.015488674999999999, "wall": 0.015504598617553711}, "gpt3_py": {"cpu": 0.09925918, "wall": 0.09943056106567383}, "gpt4_py": {"cpu": 0.046117611, "wall": 0.04615497589111328}}

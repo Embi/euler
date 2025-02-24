@@ -8,9 +8,9 @@ Script for managing all life-cycle around project euler problems:
 
 Usage:
   euler solve <problem_id> [<language>]
-  euler gpt <problem_id>
-  euler run <problem_id>
-  euler run-gpt <problem_id>
+  euler llm <problem_id> <model>
+  euler run <problem_id> [<model>]
+  euler list-models
   euler stats
 """
 
@@ -18,33 +18,38 @@ import os
 import subprocess
 import shutil
 import json
-import openai
 import pandas as pd
 from jinja2 import Template
 from typing import List
 from docopt import docopt
 from pathlib import Path
+from langchain_openai import ChatOpenAI
+from types import MappingProxyType
+from typing import Optional
 
-openai.organization = os.getenv('OPENAI_ORG')
-openai.api_key = os.getenv('OPENAI_KEY')
-
-_EULER_DIR = Path(Path.home(), 'projects/euler')
-_PROBLEMS_DIR = _EULER_DIR / 'problems'
-_TEMPL_DIR = _EULER_DIR / 'templates'
-_LANGUAGES = ('py', 'cpp', 'hs')
-
+EULER_DIR = Path(Path.home(), 'projects/euler')
+PROBLEMS_DIR = EULER_DIR / 'problems'
+TEMPL_DIR = EULER_DIR / 'templates'
+# currently only solutions in python are supported
+# but eventually I would like to add haskell or go
+# LANGUAGES = ('py', 'hs', 'go')
+LANGUAGES = ('py',)
+MODELS = MappingProxyType({
+    'gpt3': ChatOpenAI(model='gpt-3.5-turbo', temperature=0),
+    'gpt4': ChatOpenAI(model='gpt-4o', temperature=0),
+})
 
 class Problem():
 
     def __init__(self, problem_id: int):
         self.problem_id = problem_id
-        self.problem_dir = _PROBLEMS_DIR / f'problem_{problem_id:03}'
+        self.problem_dir = PROBLEMS_DIR / f'problem_{problem_id:03}'
         self.metadata_file = self.problem_dir / 'metadata.json'
         self.readme_file = self.problem_dir / 'readme.md'
         self.__init_problem()
 
     def solve(self, language: str = 'py'):
-        assert language in _LANGUAGES
+        assert language in LANGUAGES
         solution_file_name = f'solution.{language}'
         if solution_file_name not in self.solution_files():
             self.__copy_template(f'solution.{language}')
@@ -52,8 +57,8 @@ class Problem():
         self.__open_in_vim(language)
         self.run()
 
-    def solve_gpt(self):
-        """Prompt ChatGPT to solve the problem in python
+    def generate(self, model: str):
+        """Prompt ChatGPT to generate solution to the problem in python.
         """
         with self.readme_file.open() as f:
             readme = f.read()
@@ -61,28 +66,26 @@ class Problem():
         prompt = (f"Solve the following problem in Python and make the"
                   f"solution accessible via an argument-less function called"
                   f"'solution'. The result returned by the 'solution' function"
-                  f"must be an integer value. Also the solution should be as"
-                  f"fast as possible. Here is the problem: {readme}")
-        kwargs = {
-            'model': "gpt-3.5-turbo",
-            'temperature': 0,
-            'messages': [{"role": "user", "content": prompt}],
-        }
+                  f"must be an integer value. The solution should be as"
+                  f"fast as possible. Do not output any other text in"
+                  f"your response other than the python code. Don't use"
+                  f"any third party libraries. Here is the problem: {readme}")
+
         try:
-            response = openai.ChatCompletion.create(**kwargs)
-            solution = response['choices'][0]['message']['content']
+            response = MODELS[model].invoke(prompt)
+            solution = response.content
         except Exception as e:
             print("Unable to generate solution", e.args)
             return
 
         render_template(
-            template='gpt_solution.py.j2',
-            dst=self.problem_dir / 'gpt_solution.py',
-            params={'solution': solution},
+            template='llm_solution.py.j2',
+            dst=self.problem_dir / f'{model}_solution.py',
+            params={'solution': solution, 'model': model},
             overwrite=True
         )
-        self.__open_in_vim('py', 'gpt_')
-        self.run(gpt_generated=True)
+        self.__open_in_vim('py', model)
+        self.run(model=model)
 
     def generate_tags(self) -> str:
         """Prompt ChatGPT to generate tags that describe the problem.
@@ -94,16 +97,9 @@ class Problem():
                   f"word and be prefixed by a hash character - separate the "
                   f"tags by one space; never use a newline) that describe the nature "
                   f"of the following problem : {readme}")
-        kwargs = {
-            'model': "gpt-3.5-turbo",
-            'temperature': 0,
-            'messages': [{"role": "user", "content": prompt}],
-        }
         try:
-            response = openai.ChatCompletion.create(**kwargs)
-            # tags are in the following form: '#Multiples #Summation'
-            # transform them to '`#Multiples` `#Summation`'
-            tags = response['choices'][0]['message']['content']
+            response = _MODELS['gpt3'].invoke(prompt)
+            tags = response.content
             tags = ' '.join(map(lambda x: f"`{x}`", tags.split(" ")))
         except Exception as e:
             print("Unable to generate tags", e.args)
@@ -111,11 +107,14 @@ class Problem():
         self.update_metadata({'tags': tags})
         return tags
 
-    def run(self, language: str = 'py', gpt_generated: bool = False):
-        """Run a solution and collect results and stats"""
-        assert language in _LANGUAGES
-        prefix = 'gpt_' if gpt_generated else ''
+    def run(self, language: str = 'py', model: Optional[str] = None):
+        """Run a solution and collect result and stats into the metadata file
+        problem_<id>/metadata.json.
+        """
+        if model is not None:
+           assert language == 'py'
         if language == 'py':
+            prefix = self.__model_to_prefix(model)
             result = self.__execute(['python', f'{prefix}solution.py'], capture_output=True)
             result = json.loads(result)
         if self.check_result(result):
@@ -198,12 +197,15 @@ class Problem():
         ])
 
     def __open_in_brave(self):
+        """Open problem's projecteuler.net page in brave browser."""
         self.__execute(
             ['brave', f'https://projecteuler.net/problem={self.problem_id}'],
             check=False
         )
 
-    def __open_in_vim(self, language: str, prefix: str = ''):
+    def __open_in_vim(self, language: str, model: str = ''):
+        """Open particular solution file in Vim."""
+        prefix = self.__model_to_prefix(model)
         self.__execute(
             ['vim', '-o', f'{prefix}solution.{language}', 'readme.md'],
             check=False
@@ -222,15 +224,28 @@ class Problem():
             raise e
 
     def __copy_template(self, template_name: str):
-        template = _TEMPL_DIR / template_name
+        template = TEMPL_DIR / template_name
         destination = self.problem_dir / template_name
         assert template.exists()
         if not destination.exists():
             shutil.copy(template, self.problem_dir)
 
+    def __migrate_old_model_metadata(self):
+        """Migrate gpt_py key to gpt3_py key in old metadata files."""
+        metadata = self.get_metadata()
+        if "gpt_py" in metadata:
+            metadata["gpt3_py"] = metadata.pop("gpt_py")
+        _dump_json(metadata, self.metadata_file)
+
+    @staticmethod
+    def __model_to_prefix(model: Optional[str] = None):
+        prefix = '' if model is None else f'{model}_'
+        return prefix
+
 
 def update_readme_stats():
-    """Update global readme with problem stats.
+    """Update global README.md with problem statistis/info:
+    (problem id, tags, solution wall time, solution wall time...).
     """
     def _meta_to_pandas_row(problem_dir: Path):
         metadata_file = problem_dir / 'metadata.json'
@@ -245,26 +260,31 @@ def update_readme_stats():
             'id': f'[{_id}]({problem_dir})',
             'tags': metadata.pop('tags'),
         }
-        for lang, meta in metadata.items():
+        for solution, meta in metadata.items():
+            prefix = ''
+            language = solution
+            if solution.endswith('_py'):
+                prefix = solution.removesuffix('py')
+                language = 'py'
             _solution_file = solution_file.format(
-                prefix='gpt_' if 'gpt_' in lang else '',
-                lang=lang.removeprefix('gpt_'),
+                prefix=prefix,
+                lang=language,
                 problem_dir=problem_dir
             )
             if 'wall' in meta:
-                row[lang] = (
+                row[solution] = (
                     f'[{meta["wall"]:.3f}s]({_solution_file})({meta["cpu"]:.3f}s)')
             else:
-                row[lang] = f'[{meta}]({_solution_file})'
+                row[solution] = f'[{meta}]({_solution_file})'
         return row
 
-    problem_dirs = sorted(list(_PROBLEMS_DIR.glob('problem_*')))
+    problem_dirs = sorted(list(PROBLEMS_DIR.glob('problem_*')))
     df = pd.DataFrame([_meta_to_pandas_row(d) for d in problem_dirs])
     df.dropna(how='all',inplace=True)
     df.fillna('',inplace=True)
     render_template(
         template='readme.md.j2',
-        dst=_EULER_DIR / 'README.md',
+        dst=EULER_DIR / 'README.md',
         params={'stats': df.to_markdown(index=False)},
         overwrite=True
     )
@@ -273,7 +293,7 @@ def update_readme_stats():
 def render_template(template: str, dst: Path, params: dict,
                     overwrite: bool = False):
     if not dst.exists() or overwrite:
-        template_file = _TEMPL_DIR / template
+        template_file = TEMPL_DIR / template
         assert template_file.exists()
         with template_file.open() as f:
             template = Template(f.read())
@@ -298,16 +318,25 @@ if __name__ == '__main__':
         update_readme_stats()
         exit(0)
 
+    if arguments['list-models']:
+        print(",".join(MODELS.keys()))
+        exit(0)
+
     language = arguments['<language>']
     if language is None:
         language = 'py'
 
+    model = arguments['<model>']
+    if model is not None and model not in MODELS:
+        print("Unknown model")
+        print(f"Supported models: {','.join(MODELS.keys())}")
+        exit(0)
+
     problem = Problem(int(arguments['<problem_id>']))
     if arguments['solve']:
         problem.solve(language)
-    if arguments['gpt']:
-        problem.solve_gpt()
+    if arguments['llm']:
+        assert model is not None
+        problem.generate(model)
     if arguments['run']:
-        problem.run()
-    if arguments['run-gpt']:
-        problem.run(gpt_generated=True)
+        problem.run(language, model)

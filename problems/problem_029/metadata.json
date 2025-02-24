@@ -1,1 +1,1 @@
-{"solution": 9183, "id": 29, "tags": "`#integercombinations` `#distinctterms`", "py": {"cpu": 0.580104022, "wall": 0.580294132232666}, "gpt_py": {"cpu": 0.0036900099999999988, "wall": 0.0036923885345458984}}
+{"solution": 9183, "id": 29, "tags": "`#integercombinations` `#distinctterms`", "py": {"cpu": 0.657247366, "wall": 0.6576387882232666}, "gpt3_py": {"cpu": 0.0036900099999999988, "wall": 0.0036923885345458984}, "gpt4_py": {"cpu": 0.0028409430000000003, "wall": 0.0028438568115234375}}
