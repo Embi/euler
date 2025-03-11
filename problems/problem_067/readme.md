@@ -1,9 +1,9 @@
 By starting at the top of the triangle below and moving to adjacent
 numbers on the row below, the maximum total from top to bottom is 23.
 
-<span class="red">**3**</span>  
-<span class="red">**7**</span> 4  
-2 <span class="red">**4**</span> 6  
+<span class="red">**3**</span>
+<span class="red">**7**</span> 4
+2 <span class="red">**4**</span> 6
 8 5 <span class="red">**9**</span> 3
 
 That is, 3 + 7 + 4 + 9 = 23.

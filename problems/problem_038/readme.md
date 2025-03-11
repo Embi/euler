@@ -1,7 +1,7 @@
 Take the number 192 and multiply it by each of 1, 2, and 3:
 
-> 192 × 1 = 192  
-> 192 × 2 = 384  
+> 192 × 1 = 192
+> 192 × 2 = 384
 > 192 × 3 = 576
 
 By concatenating each product we get the 1 to 9 pandigital, 192384576.

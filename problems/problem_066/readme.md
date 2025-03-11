@@ -11,10 +11,10 @@ D is square.
 By finding minimal solutions in *x* for D = {2, 3, 5, 6, 7}, we obtain
 the following:
 
-3<sup>2</sup> – 2×2<sup>2</sup> = 1  
-2<sup>2</sup> – 3×1<sup>2</sup> = 1  
-<span class="red strong">9</span><sup>2</sup> – 5×4<sup>2</sup> = 1  
-5<sup>2</sup> – 6×2<sup>2</sup> = 1  
+3<sup>2</sup> – 2×2<sup>2</sup> = 1
+2<sup>2</sup> – 3×1<sup>2</sup> = 1
+<span class="red strong">9</span><sup>2</sup> – 5×4<sup>2</sup> = 1
+5<sup>2</sup> – 6×2<sup>2</sup> = 1
 8<sup>2</sup> – 7×3<sup>2</sup> = 1
 
 Hence, by considering minimal solutions in *x* for D ≤ 7, the largest

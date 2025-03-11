@@ -3,7 +3,7 @@ Consider the following "magic" 3-gon ring, filled with the numbers 1 to
 
 <div class="center">
 
-<img src="assets/project/images/p068_1.png" class="dark_img" />  
+<img src="assets/project/images/p068_1.png" class="dark_img" />
 
 </div>
 
@@ -40,6 +40,6 @@ string for a "magic" 5-gon ring?
 
 <div class="center">
 
-<img src="assets/project/images/p068_2.png" class="dark_img" />  
+<img src="assets/project/images/p068_2.png" class="dark_img" />
 
 </div>

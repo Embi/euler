@@ -12,7 +12,7 @@ from lowest to highest, in the following way:
 - **Straight Flush**: All cards are consecutive values of same suit.
 - **Royal Flush**: Ten, Jack, Queen, King, Ace, in same suit.
 
-The cards are valued in the order:  
+The cards are valued in the order:
 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
 
 If two players have the same ranked hands then the rank made up of the

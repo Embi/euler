@@ -13,12 +13,12 @@ the coefficients, −79 and 1601, is −126479.
 
 Considering quadratics of the form:
 
-> $n^2 + an + b$, where $|a| < 1000$ and $|b| \le 1000$  
->   
+> $n^2 + an + b$, where $|a| < 1000$ and $|b| \le 1000$
+>
 >
 > <div>
 >
-> where $|n|$ is the modulus/absolute value of $n$  
+> where $|n|$ is the modulus/absolute value of $n$
 > e.g. $|11| = 11$ and $|-4| = 4$
 >
 > </div>

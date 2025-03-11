@@ -2,7 +2,7 @@ Euler's totient function, $\phi(n)$ \[sometimes called the phi
 function\], is used to determine the number of positive numbers less
 than or equal to $n$ which are relatively prime to $n$. For example, as
 $1, 2, 4, 5, 7$, and $8$, are all less than nine and relatively prime to
-nine, $\phi(9)=6$.  
+nine, $\phi(9)=6$.
 The number $1$ is considered to be relatively prime to every positive
 number, so $\phi(1)=1$.
 

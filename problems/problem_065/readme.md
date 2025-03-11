@@ -16,7 +16,7 @@ Hence the sequence of the first ten convergents for $\sqrt{2}$ are:
 
 $1, \dfrac{3}{2}, \dfrac{7}{5}, \dfrac{17}{12}, \dfrac{41}{29}, \dfrac{99}{70}, \dfrac{239}{169}, \dfrac{577}{408}, \dfrac{1393}{985}, \dfrac{3363}{2378}, ...$
 
-What is most surprising is that the important mathematical constant,  
+What is most surprising is that the important mathematical constant,
 $e = [2; 1, 2, 1, 1, 4, 1, 1, 6, 1, ... , 1, 2k, 1, ...]$.
 
 The first ten terms in the sequence of convergents for *e* are:
